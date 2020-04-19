@@ -53,7 +53,7 @@ class App extends React.Component {
         headers.append('Content-Type', 'application/json');
         // headers.append('OPTIONS');
         // TODO: change the address here
-        await fetch(`/predict`, { // http://${this.IP_ADDRESS}
+        await fetch(`http://localhost:8000/predict`, { // http://${this.IP_ADDRESS}
             method: 'POST',
             body: JSON.stringify({image: this.state.base64}),
             headers: headers
