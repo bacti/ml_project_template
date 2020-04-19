@@ -98,6 +98,11 @@ bind 0.0.0.0
 systemctl stop redis
 systemctl start redis
 ```
+or
+```
+sudo service redis-server stop
+sudo service redis-server start
+```
 
 4. Celery
 
@@ -115,7 +120,10 @@ rm /etc/nginx/sites-enabled/default
 cp nginx/nginx.conf /etc/nginx/sites-enabled/
 systemctl reload nginx
 ```
-
+or
+```
+sudo service nginx reload
+```
 Now you can go to your browser and see what is happening: [0.0.0.0](0.0.0.0)
 
 
